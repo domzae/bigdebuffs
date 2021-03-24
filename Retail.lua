@@ -156,6 +156,7 @@ addon.Spells = {
     [102558] = { type = BUFF_OFFENSIVE }, -- Incarnation: Guardian of Ursoc
     [102560] = { type = BUFF_OFFENSIVE }, -- Incarnation: Chosen of Elune
     [106951] = { type = BUFF_OFFENSIVE }, -- Berserk
+    [127797] = { type = DEBUFF_OFFENSIVE, nounitFrames = true, nonameplates = true }, -- Ursol's Vortex
     [132158] = { type = BUFF_OFFENSIVE }, -- Nature's Swiftness
     [155835] = { type = BUFF_DEFENSIVE }, -- Bristling Fur
     [192081] = { type = BUFF_DEFENSIVE }, -- Ironfur
@@ -496,14 +497,23 @@ addon.Spells = {
 
     -- Other
 
-    [20549] = { type = CROWD_CONTROL }, -- War Stomp
     [34709] = { type = BUFF_OTHER }, -- Shadow Sight
-    [107079] = { type = CROWD_CONTROL }, -- Quaking Palm
+    [115804] = { type = DEBUFF_OFFENSIVE, nounitFrames = true, nonameplates = true, noraidFrames = true }, -- Mortal Wounds
+        [199845] = { type = DEBUFF_OFFENSIVE, parent = 115804 }, -- Psyflay (Psyfiend)
     [192001] = { type = BUFF_OTHER }, -- Drink
         [167152] = { type = BUFF_OTHER, parent = 192001 }, -- Refreshment
+    [345231] = { type = BUFF_DEFENSIVE }, -- Gladiator's Emblem
+
+    -- Racials
+
+    [20549] = { type = CROWD_CONTROL }, -- War Stomp
+    [107079] = { type = CROWD_CONTROL }, -- Quaking Palm
     [256948] = { type = BUFF_OTHER }, -- Spatial Rift
     [255654] = { type = CROWD_CONTROL }, -- Bull Rush
     [287712] = { type = CROWD_CONTROL }, -- Haymaker
+
+    -- Shadowlands: Covenant/Soulbind
+
     [310143] = { type = BUFF_SPEED_BOOST }, -- Soulshape
     [320224] = { type = BUFF_DEFENSIVE }, -- Podtender
     [323524] = { type = IMMUNITY }, -- Ultimate Form (Necrolord Fleshcraft)
@@ -512,7 +522,6 @@ addon.Spells = {
     [329776] = { type = BUFF_DEFENSIVE }, -- Ascendant Phial (Kyrian - Kleia Trait)
     [331866] = { type = CROWD_CONTROL }, -- Agent of Chaos (Venthyr Door of Shadows)
     [332505] = { type = BUFF_DEFENSIVE }, -- Soulsteel Clamps (Kyrian - Mikanikos Trait)
-    [345231] = { type = BUFF_DEFENSIVE }, -- Gladiator's Emblem
 
     -- Legacy (may be deprecated)
 
